@@ -1,0 +1,12 @@
+<!--detalhes do herói selecionado-->
+<div *ngIf="hero">
+ <!--objeto da classe hero chamado selectedHero chamando os dados do heroi selecionado-->
+    <h2>{{hero.name | uppercase}} Details</h2>
+  
+    <div><span>id: </span>{{hero.id}}</div>
+    <div>
+      <label>name:
+        <input [(ngModel)]="hero.name" placeholder="name">
+      </label>
+    </div>   
+</div>

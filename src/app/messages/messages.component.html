@@ -1,0 +1,10 @@
+<!--só efetua se houver alguma mensagem para exibir-->
+<div *ngIf="messageService.messages.length">
+
+  <h2>Messages</h2>
+  <button class="clear"
+          (click)="messageService.clear()">clear</button>
+          <!--pegando a mensagem injetada no componente-->
+  <div *ngFor='let message of messageService.messages'> {{message}} </div>
+
+</div>
